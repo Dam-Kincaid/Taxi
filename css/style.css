@@ -743,7 +743,7 @@ body {
 }
 
 /*** Responsive ***/
-@media (max-width: 430px) {
+@media (max-width: 480px) {
     body {
         overflow-x: hidden;
     }
@@ -753,7 +753,7 @@ body {
     .nav__logo {
         position: relative;
         transform-origin: left top;
-        transform: scale(2.2);
+        transform: scale(2.5);
     }
     .nav__logo p {
         text-wrap: nowrap;
@@ -808,9 +808,9 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
         width: 100vw;
-        height: 90vh;
+        height: 100vh;
         background: #000;
         position: absolute;
         top: 0;
@@ -835,12 +835,43 @@ body {
         margin-top: 14vw;
     }
     .greeting h3 {
-        font-size: 5vw;
+        font-size: 6vw;
     }
     .greeting h2 {
-        font-size: 9vw;
+        font-size: 10vw;
     }
     .greeting p {
-        font-size: 2.2vw;
+        font-size: 2.5vw;
+    }
+
+    /* form */
+    #about {
+        position: relative;
+    }
+    .about-form {
+        position: absolute;
+        top: 5vw;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+    }
+    .about-form h2 {
+        text-align: center;
+        font-size: 3vw;
+        padding: 2vw 0 1.5vw;
+    }
+    .about-form__input {
+        padding: 2vw 6vw;
+    }
+    .about-form__input input {
+        font-size: 2vw;
+        margin-bottom: 2vw;
+    }
+    .about-form__input input::placeholder {
+        font-size: 2vw !important;
+    }
+    .about-form__btn {
+        padding: 1.2vw 0 0.8vw;
+        font-size: 2.4vw;
     }
 }
