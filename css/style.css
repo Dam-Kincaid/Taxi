@@ -847,13 +847,24 @@ body {
     /* form */
     #about {
         position: relative;
+        flex-direction: column;
+    }
+    .about-descri {
+        width: 100%;
+    }
+    .about-descri h3 {
+        font-size: 3.5vw;
+    }
+    .about-descri h2 {
+        font-size: 4vw;
+    }
+    .about-descri p,
+    .about-descri__btn {
+        display: none;
     }
     .about-form {
-        position: absolute;
-        top: 5vw;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 50%;
+        width: 90%;
+        align-self: center;
     }
     .about-form h2 {
         text-align: center;
@@ -873,5 +884,118 @@ body {
     .about-form__btn {
         padding: 1.2vw 0 0.8vw;
         font-size: 2.4vw;
+    }
+
+    #feature {
+        height: auto;
+        padding-bottom: 3vw;
+    }
+    #feature h3 {
+        font-size: 3.5vw;
+        line-height: 1;
+    }
+    #feature .feature__title2 {
+        font-size: 4vw;
+    }
+    .taxi-tariff {
+        flex-direction: column;
+        gap: 3vw;
+        align-items: start;
+    }
+    .tariff-card {
+        width: 90%;
+        align-items: flex-start;
+        padding: 1.5vw 20vw 1.5vw 1.5vw;
+        border-radius: 1.5vw;
+        background: #ffc61a;
+    }
+    .tariff-card::before {
+        top: 50%;
+        left: 95%;
+        transform: translate(-100%, -50%);
+    }
+    .tariff-card__title {
+        font-size: 3.5vw;
+    }
+    .tariff-card p {
+        font-size: 2vw;
+        text-wrap: balance;
+        text-align: left;
+    }
+    .tariff-card__prix {
+        color: black;
+    }
+    .tariff-card .more-btn {
+        background: #181501;
+        color: #f1f1f1;
+    }
+
+    #blog {
+        height: auto;
+        padding: 2vw 0;
+    }
+    .blog-box {
+        padding: 2vw 10vw;
+    }
+    .blog__title1 {
+        font-size: 3.5vw;
+        line-height: 1;
+    }
+    .blog__title2 {
+        font-size: 4vw;
+    }
+    .blog-item {
+        width: 48%;
+    }
+    .blog-item__h4 {
+        font-size: 2.8vw;
+    }
+    .blog-item__p {
+        font-size: 1.8vw;
+    }
+    .blog-item__logo {
+        width: 6.5vw;
+        height: 6.5vw;
+    }
+    .blog-btn {
+        margin-block: 0;
+        margin-left: 10vw;
+    }
+
+    #download {
+        height: auto;
+    }
+    #download::after {
+        display: none;
+    }
+    .download__title1 {
+        font-size: 3.5vw;
+    } 
+    .download__title2 {
+        font-size: 4vw;
+    }
+    .download-box {
+        width: 90%;
+        margin: 4vw 3vw;
+    }
+    .download-box__title {
+        font-size: 2.6vw;
+    }
+    .download-box p {
+        font-size: 1.8vw;
+    }
+    .download-box__link {
+        transform-origin: top left;
+        transform: scale(1.2);
+    }
+
+    #client,
+    #contact,
+    #footer {
+        height: auto;
+        padding: 5vw;
+    }
+    #footer::after {
+        font-size: 1.6vw;
     }
 }
