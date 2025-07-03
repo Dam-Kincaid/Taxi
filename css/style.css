@@ -1,4 +1,6 @@
-* {
+*,
+::before,
+::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -779,7 +781,7 @@ body {
         top 200ms ease 200ms;
     }
     .nav__link-btn i:nth-child(1) {
-        top: 22%;
+        top: 25%;
     }
     .nav__link-btn i:nth-child(3) {
         top: 75%;
@@ -986,6 +988,7 @@ body {
         font-size: 1.8vw;
     }
     .download-box__link {
+        width: fit-content;
         transform-origin: top left;
         transform: scale(1.2);
     }
