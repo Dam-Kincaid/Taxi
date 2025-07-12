@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 html {
+    font-size: 16px;
     font-family: sans-serif;
     scroll-behavior: smooth;
 }
@@ -727,11 +728,11 @@ body {
     color: goldenrod;
 }
 .footer-box__user a img {
-    height: 1.5vw;
+    height: 1.2em;
 }
 .footer-box__user a .fa-android {
-    width: 2vw;
-    height: 2vw;
+    width: 1.8em;
+    height: 1.8em;
 }
 .footer-box__location {
     color: #ddd;
@@ -740,8 +741,10 @@ body {
     margin-bottom: 1vw;
     display: flex;
 }
-.footer-box__location > p > i {
+.footer-box__location > p > img {
     margin-right: 1.2vw;
+    width: 0.85rem;
+    filter: invert(1);
 }
 
 /*** Responsive ***/
@@ -835,7 +838,7 @@ body {
         display: none;
     }
     .greeting {
-        margin-top: 14vw;
+        margin-top: 30vw;
     }
     .greeting h3 {
         font-size: 6vw;
@@ -851,42 +854,49 @@ body {
     #about {
         position: relative;
         flex-direction: column;
+        padding: 8vw 4vw 4vw;
+        border-radius: 5vw;
+        margin-top: -5vw;
     }
     .about-descri {
         width: 100%;
     }
     .about-descri h3 {
-        font-size: 3.5vw;
+        font-size: 4vw;
     }
     .about-descri h2 {
-        font-size: 4vw;
+        font-size: 6vw;
     }
     .about-descri p,
     .about-descri__btn {
         display: none;
     }
     .about-form {
-        width: 90%;
+        width: 100%;
         align-self: center;
+        border-radius: 2vw;
     }
     .about-form h2 {
         text-align: center;
-        font-size: 3vw;
+        font-size: 4vw;
         padding: 2vw 0 1.5vw;
     }
     .about-form__input {
         padding: 2vw 6vw;
     }
     .about-form__input input {
-        font-size: 2vw;
-        margin-bottom: 2vw;
+        font-size: 4vw;
+        margin-bottom: 4vw;
     }
     .about-form__input input::placeholder {
-        font-size: 2vw !important;
+        font-size: clamp(0.7rem, 2.8vw, 0.9rem) !important;
     }
     .about-form__btn {
+        width: 90%;
         padding: 1.2vw 0 0.8vw;
         font-size: 2.4vw;
+        margin-bottom: 2vw;
+        border-radius: 1vw;
     }
 
     #feature {
@@ -894,11 +904,11 @@ body {
         padding-bottom: 3vw;
     }
     #feature h3 {
-        font-size: 3.5vw;
+        font-size: 4vw;
         line-height: 1;
     }
     #feature .feature__title2 {
-        font-size: 4vw;
+        font-size: 4.5vw;
     }
     .taxi-tariff {
         flex-direction: column;
@@ -906,31 +916,33 @@ body {
         align-items: start;
     }
     .tariff-card {
-        width: 90%;
+        width: 100%;
         align-items: flex-start;
-        padding: 1.5vw 20vw 1.5vw 1.5vw;
+        padding: 1.5vw 25vw 1.5vw 1.5vw;
         border-radius: 1.5vw;
         background: #ffc61a;
     }
     .tariff-card::before {
         top: 50%;
         left: 95%;
-        transform: translate(-100%, -50%);
+        transform: translate(-100%, -50%) scale(1.2);
     }
     .tariff-card__title {
-        font-size: 3.5vw;
+        font-size: 4.5vw;
     }
     .tariff-card p {
-        font-size: 2vw;
+        font-size: 0.7rem;
         text-wrap: balance;
         text-align: left;
     }
     .tariff-card__prix {
         color: black;
+        font-size: 0.7rem;
     }
     .tariff-card .more-btn {
         background: #181501;
         color: #f1f1f1;
+        font-size: 0.6rem;
     }
 
     #blog {
@@ -948,7 +960,8 @@ body {
         font-size: 4vw;
     }
     .blog-item {
-        width: 48%;
+        width: 45%;
+        padding-left: 8vw;
     }
     .blog-item__h4 {
         font-size: 2.8vw;
@@ -957,12 +970,16 @@ body {
         font-size: 1.8vw;
     }
     .blog-item__logo {
-        width: 6.5vw;
-        height: 6.5vw;
+        width: 8vw;
+        height: 8vw;
+    }
+    .blog-item__logo img {
+        width: 3.5vw;
     }
     .blog-btn {
         margin-block: 0;
-        margin-left: 10vw;
+        margin-left: 8vw;
+        font-size: 3vw;
     }
 
     #download {
@@ -972,27 +989,48 @@ body {
         display: none;
     }
     .download__title1 {
-        font-size: 3.5vw;
+        font-size: 4vw;
     } 
     .download__title2 {
-        font-size: 4vw;
+        font-size: 4.5vw;
     }
     .download-box {
         width: 90%;
         margin: 4vw 3vw;
     }
     .download-box__title {
-        font-size: 2.6vw;
+        font-size: 0.8rem;
     }
     .download-box p {
-        font-size: 1.8vw;
+        font-size: 0.7rem;
     }
     .download-box__link {
         width: fit-content;
         transform-origin: top left;
-        transform: scale(1.2);
+        transform: scale(1.6);
     }
-
+    .download-box__btn {
+        padding: 0.8vw 1.5vw .8vw;
+    }
+    .client__title1 {
+        font-size: 4vw;
+    }
+    .client__title2 {
+        font-size: 4.5vw;
+    }
+    .client__carte {
+        width: 50%;
+    }
+    .client__carte > p{
+        font-size: 0.5rem;
+    }
+    .client__carte-perso > img {
+        width: 6vw;
+        height: 6vw;
+    }
+    .carte-perso__name {
+        font-size: 0.7rem;
+    }
     #client,
     #contact,
     #footer {
@@ -1000,6 +1038,28 @@ body {
         padding: 5vw;
     }
     #footer::after {
-        font-size: 1.6vw;
+        font-size: 2.2vw;
+    }
+    #footer {
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    .footer-box {
+        width: 90%;
+    }
+    .footer-box__title {
+        font-size: 0.7rem;
+    }
+    #footer p {
+        font-size: 0.6rem;
+    }
+    .social-icon {
+        height: 3vw;
+    }
+    .footer-box__user a {
+        font-size: 0.6rem;
+    }
+    .footer-box__location > p > img {
+        width: 0.6rem;
     }
 }
